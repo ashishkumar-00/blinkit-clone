@@ -1,0 +1,67 @@
+/* Jab screen 768px se choti ho (Mobile/Tablet) */
+@media (max-width: 768px) {
+    
+    .header1 {
+        width: 100%;
+        height: auto; /* Height auto rakhein taaki content fit ho jaye */
+        padding: 1.5rem 1rem;
+        flex-direction: row; /* Logo aur Menu button ek line mein */
+        justify-content: space-between;
+    }
+
+    /* Mobile par links ko hide kar dena sahi hai (Hamburger menu ke liye) */
+    .link-btn {
+        display: none; 
+    }
+
+    .contener {
+        width: 100%;
+        flex-direction: column-reverse; /* Pehle text phir image (Mobile ke liye best) */
+        padding: 2rem 1rem;
+        height: auto; /* Fixed height hata dein */
+        overflow: visible; 
+    }
+
+    .box1, .box2 {
+        width: 100%;
+        text-align: center; /* Mobile par center alignment accha lagta hai */
+        padding: 1rem;
+    }
+
+    .hii {
+        font-size: 2.5rem; /* Heading thodi choti */
+    }
+
+    .ui-ux {
+        font-size: 2rem;
+    }
+
+    .btn-tag {
+        justify-content: center; /* Buttons beech mein laane ke liye */
+    }
+
+    /* Image Gola Adjustment */
+    .gola {
+        height: 250px;
+        width: 250px;
+        margin: 0 auto 2rem auto; /* Beech mein set karne ke liye */
+    }
+
+    /* Projects Box Adjustment */
+    .projects-box {
+        flex-direction: column; /* Stats upar-niche dikhenge */
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .pro {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+    }
+    
+    .pro:last-child {
+        border-bottom: none;
+    }
+}

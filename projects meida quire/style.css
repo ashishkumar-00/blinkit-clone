@@ -1,0 +1,84 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+    .contener{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30rem;
+    width: 20rem;
+    /* justify-content: center; */
+    background-color: rgba(255, 145, 0, 0.342);
+   }
+
+   .gola{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: inline-block;
+    margin-top: 2rem;
+    background-image: url(images.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+   }
+
+   h2{
+      display: inline-block;
+      margin-top: 2rem;
+      color: rgba(255, 94, 0, 0.822);
+      font-size: 2rem;
+      text-align: center;
+   }
+   h1{
+    margin-top: 2rem;
+   }
+   .form-login{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    /* align-items: center; */
+    justify-content: center;
+    padding:0rem 1rem 0rem 1rem;
+
+    /* display: inline-block; */
+   }
+    .form-login input{
+     height: 2.5rem;
+     width: 100%;
+     margin-bottom: 1rem;
+     padding: 0.7rem;
+     font-size: 1.5rem;
+     border: none;
+     border-radius: 1rem;
+    }
+    .form-login button{
+     height: 2.8rem;
+     width: 100%;
+     background-color: rgb(12, 29, 255);
+     color: white;
+     border: none;
+     cursor: pointer;
+     font-size: 1.8rem;
+     border-radius: 1rem;
+
+    }
+    label{
+     margin-bottom: 0.5rem;
+     display: inline-block;
+       font-size: 1.5rem;
+    }

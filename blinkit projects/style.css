@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    /* padding: 2rem; */
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+
+}
+#site-search{
+   height: 2.9rem;
+   width: 35rem;
+   border: 0.1rem solid rgba(0, 0, 0, 0.116);
+   border-radius: 0.5rem;
+   padding: 0.9rem;
+   position: relative;
+   right: 7rem;
+   font-size: 1.3rem;
+   background-color: #d1c0c034;
+}
+
+header{
+    background: #fff;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.068);
+   height: 6rem;
+   padding: 1.5rem ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo{
+    height: 100%;
+    width: 8rem;
+    /* border-right: 0.1rem solid rgba(0, 0, 0, 0.247); */
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f8cb46;
+    margin-right: 2rem;
+}
+h3{
+    font-size: 1.3rem;
+    margin-right: 8rem;
+}
+.login-button{
+    font-size: 1.5rem;
+    position: relative;
+    right: 4rem;
+}
+.cart-button{
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+   background-color:#337b3c;
+   
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-hero{
+   
+    height: 15rem;
+    width: 95%;
+    background-image: url("Frame-1437256605-2-2.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: none;
+    position: relative;
+    bottom: 6rem;
+    /* margin-bottom: 11rem; */
+    /* border-radius: 2rem; */
+}
+
+.content-hero{
+   width: 100%;
+   height: 20vh;
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   gap: 1rem;
+   position: relative;
+   bottom: 16.4rem;
+   right: 5.5rem;
+}
+.box {
+    width: 22rem;
+    height: 13rem;
+    background-color: #f8cb46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    
+}
+.box3{
+    background-image: url(baby1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box2{
+    background-image: url(pet1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box1{
+    background-image: url(food1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boxx{
+    width: 95%;
+
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    padding: 1rem ;
+    position: relative;
+    bottom: 11rem;
+    left: 1.6rem;
+    
+}
+
+.boxx1{
+    height: 11rem;
+    width: 20%;
+    background-color: aqua;
+    
+}
+.boxxx{
+    width: 95%;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+    bottom: 11.5rem;
+    left: 1.7rem;
+
+}
+.box11{
+    background-image: url(11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box12{
+    background-image: url(12.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box13{
+    background-image: url(13.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box14{
+    background-image: url(14.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box15{
+    background-image: url(15.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box16{
+    background-image: url(16.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box17{
+    background-image: url(17.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box18{
+    background-image: url(19.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box19{
+    background-image: url(18.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box20{
+    background-image: url(20.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box21{
+    background-image: url(21.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box22{
+    background-image: url(22.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box23{
+    background-image: url(23.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box24{
+    background-image: url(24.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box25{
+    background-image: url(25.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box26{
+    background-image: url(26.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box27{
+    background-image: url(27.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box28{
+    background-image: url(28.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box29{
+    background-image: url(29.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box30{
+    background-image: url(30.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
