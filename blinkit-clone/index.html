@@ -3,71 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit - Grocery in 10 minutes</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responseve.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>blinkit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <!--logo-->
-            <div class="logo-blinkit">
-            <div class="logo">blink<span style="color:#00b853;">it</span></div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="header-inner">
+
+            <div class="logo">
+                blink<span>it</span>
             </div>
-             <h3 class="addares">Delivery in 15 minutes</h3>
 
+            <div class="delivery-info">
+                <span class="delivery-time">10 minutes</span>
+                <span class="delivery-label">Delivery in</span>
+                <div class="location">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Aligarh, Uttar Pradesh
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+            </div>
 
-             <form >
-             <input type="search" id="site-search"  placeholder=" search itmes"/>
-             </form>
+            <div class="search-wrapper">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" id="searchInput" class="search-input" placeholder='Search "milk"' autocomplete="off">
+                <div class="search-dropdown" id="searchDropdown"></div>
+            </div>
 
-             <div class="login-button">Login</div>
-             <div class="cart-button"><i class="fa-solid fa-cart-arrow-down"></i>My Cart</div>
+            <div class="header-actions">
+                <button class="login-btn" id="loginBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Login
+                </button>
+                <button class="cart-btn" id="cartBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    My Cart
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+
         </div>
     </header>
 
+    <!-- ===== HERO BANNER ===== -->
     <section class="hero">
-
-        <div class="img-hero"></div>
-      
+        <div class="hero-banner">
+            <img src="Frame-1437256605-2-2.jpg" alt="Blinkit Offer" class="banner-img" onerror="this.style.background='linear-gradient(135deg,#f8cb46,#f5a623)';this.style.borderRadius='12px'">
+            <div class="banner-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
     </section>
 
-     <div class="content-hero">
-        <div class="box1 box"></div>
-        <div class="box2 box"></div>
-        <div class="box3 box"></div>
-      </div>
+    <!-- ===== CATEGORY CARDS ===== -->
+    <section class="categories">
+        <div class="section-inner">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="filterCategory('fruits')">
+                    <img src="food1.jpg" alt="Fruits & Vegetables" onerror="this.src='https://via.placeholder.com/160x100/f8cb46/fff?text=Fruits'">
+                    <span>Fruits &amp; Vegetables</span>
+                </div>
+                <div class="category-card" onclick="filterCategory('pets')">
+                    <img src="pet1.jpg" alt="Pet Care" onerror="this.src='https://via.placeholder.com/160x100/f8cb46/fff?text=Pet+Care'">
+                    <span>Pet Care</span>
+                </div>
+                <div class="category-card" onclick="filterCategory('baby')">
+                    <img src="baby1.jpg" alt="Baby Care" onerror="this.src='https://via.placeholder.com/160x100/f8cb46/fff?text=Baby+Care'">
+                    <span>Baby Care</span>
+                </div>
+                <div class="category-card" onclick="filterCategory('dairy')">
+                    <img src="11.jpg" alt="Dairy & Breakfast" onerror="this.src='https://via.placeholder.com/160x100/4ade80/fff?text=Dairy'">
+                    <span>Dairy &amp; Breakfast</span>
+                </div>
+                <div class="category-card" onclick="filterCategory('snacks')">
+                    <img src="12.jpg" alt="Snacks" onerror="this.src='https://via.placeholder.com/160x100/f97316/fff?text=Snacks'">
+                    <span>Snacks</span>
+                </div>
+                <div class="category-card" onclick="filterCategory('beverages')">
+                    <img src="13.jpg" alt="Beverages" onerror="this.src='https://via.placeholder.com/160x100/3b82f6/fff?text=Beverages'">
+                    <span>Beverages</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ===== PRODUCTS SECTION ===== -->
+    <section class="products-section">
+        <div class="section-inner">
+            <div class="products-header">
+                <h2 class="section-title" id="productsTitle">Best Sellers</h2>
+                <button class="see-all-btn" onclick="resetFilter()">See All</button>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products are injected by JS -->
+            </div>
+        </div>
+    </section>
 
-      <div class="boxx">
+    <!-- ===== CART SIDEBAR ===== -->
+    <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>My Cart</h3>
+            <button class="close-cart" onclick="closeCart()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="delivery-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Delivery in <strong>10 mins</strong>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                <p>Your cart is empty</p>
+                <span>Add items to get started</span>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">₹0</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </aside>
 
-        <div class="boxx1 box11"></div>
-        <div class="boxx1 box12"></div>
-        <div class="boxx1 box13"></div>
-        <div class="boxx1 box14"></div>
-        <div class="boxx1 box15"></div>
-        <div class="boxx1 box16"></div>
-        <div class="boxx1 box17"></div>
-        <div class="boxx1 box18"></div>
-        <div class="boxx1 box19"></div>
-        <div class="boxx1 box20"></div>
-      </div>
-           <div class="boxxx">
+    <!-- ===== LOGIN MODAL ===== -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="modal-logo">blink<span>it</span></div>
+            <h3>Login or Signup</h3>
+            <p>Enter your mobile number to continue</p>
+            <div class="phone-input-wrapper">
+                <span class="country-code">+91</span>
+                <input type="tel" id="phoneInput" placeholder="Mobile number" maxlength="10">
+            </div>
+            <button class="otp-btn" onclick="sendOTP()">Continue</button>
+        </div>
+    </div>
 
-        <div class="boxx1 box21"></div>
-        <div class="boxx1 box22"></div>
-        <div class="boxx1 box23"></div>
-        <div class="boxx1 box24"></div>
-        <div class="boxx1 box25"></div>
-        <div class="boxx1 box26"></div>
-        <div class="boxx1 box27"></div>
-        <div class="boxx1 box28"></div>
-        <div class="boxx1 box29"></div>
-        <div class="boxx1 box30"></div>
-      </div>
-   
-   
-
+    <script src="script.js"></script>
 </body>
 </html>
